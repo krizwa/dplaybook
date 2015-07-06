@@ -232,6 +232,27 @@ p img {
 .navbar-nav .leaf {
 	border-top: 10px solid transparent;
 }
+.navbar-nav li:nth-child(4){
+	position: absolute;
+	right:0;
+	text-decoration:underline;
+	display:inline-block;
+	padding-left: 100px;
+
+}
+
+.navbar-nav li:nth-child(4) a:before {
+	content:"";
+	background-image:url("../images/logout.png");
+	background-repeat:no-repeat;
+	width:30px;
+	height:30px;
+	display: inline-block;
+	float:left;
+	margin-right:5px;
+	margin-top:-3px;
+}
+
 .navbar-nav li.active {
 	border-top: 5px solid #000;
 }
@@ -455,8 +476,8 @@ form #edit-search-block-form--2:-ms-input-placeholder {
 .node-type-persona .panel-col-first .views-row {
 	border-bottom: 1px solid #000;
 	padding-bottom: 40px;
-	margin-bottom: 30px;
-	padding:5px 10px;
+	margin-bottom: 0px;
+	padding: 30px 10px;
 }
 .node-type-persona .panel-col-first .views-row:hover {
 	background-color:#f4f2f0;
@@ -1190,6 +1211,12 @@ footer .region-footer:before {
 	padding:50px 0;
 	position:relative;
 }
+.page-user-login .main-container h1,
+.page-user-password .main-container{
+	text-align:center;
+	margin-bottom:40px;
+}
+
 .page-user-login .main-container:before,
 .page-user-password .main-container:before{
 	content: "";
@@ -1204,7 +1231,7 @@ footer .region-footer:before {
 }
 .page-user-login .main-container .btn-primary,
 .page-user-password .main-container .btn-primary {
-	padding: 12px 15px;
+	padding: 12px 25px;
 	display:inline-block;
 	margin-top:20px;
 	text-transform:uppercase;
@@ -1220,9 +1247,19 @@ footer .region-footer:before {
 	color:#FFF;
 
 }
+input.form-control {
+	height:auto;
+	padding:15px 10px;
+}
 
 .page-user-login input,
 .page-user-password input {
 	background-color:#FFF;
 	border: 1px solid #bab8b7;
+}
+.forgot-password-link {
+	display:inline-block;
+	margin-left:20px;
+	position:relative;
+	top:10px	
 }
