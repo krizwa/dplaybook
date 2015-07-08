@@ -1,90 +1,100 @@
 /* Combo article */
-.node-type-combo-article .panel-col-top {
-	background-color: @magenta;
-}
-.node-type-combo-article .panel-col-top:before {
-	background-color: @magenta;
-}
-.node-type-combo-article .pane-combo-page-articles {
-	border-top: 5px solid @gray3;
-	margin-top: 90px;
-}
-.node-type-combo-article .panel-col-top .field-item a {
-	color: #000;
-}
-.panel-col-top .pane-node-title {
-	font-size: 47px;
-	font-weight: bold;
-}
-.node-type-combo-article .panel-col-first {
-	width: 620px;
-	margin-left: 105px;
-	margin-right: 85px;
-	margin-bottom: 40px;
-}
-.node-type-combo-article .panel-col-first h3 {
-	font-size: 47px;
-	color: @gray3;
-	border-bottom: 5px solid @gray3;
-	padding-top: 15px;
-	padding-bottom: 34px;
-}
-.node-type-combo-article .panel-col-first .article-parent-class {
-	padding-top: 22px;
-	padding-bottom: 43px;
-	padding-right: 27px;
-}
-.node-type-combo-article .panel-col-first .article-parent-class span {
-	display: block;
-}
-.node-type-combo-article .panel-col-first .article-parent-class .article-title-class {
-	font-size: 47px;
-}
-.node-type-combo-article .panel-col-first .article-parent-class .article-specification-class {
-	color: @magenta;
-	font-weight: bold;
-}
-.node-type-combo-article .panel-col-first .article-parent-class .article-date-class {
-	font-weight: bold;
-	line-height: 16px;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	font-size: 12px;
-}
-.node-type-combo-article .panel-col-first .article-parent-class .article-date-class img {
-	padding-right: 8px;
-	margin-top: -4px;
-}
-.node-type-combo-article .panel-col-first .views-row {
-	padding-top: 0;
-	padding-bottom: 10px;
-	border-bottom: 1px solid @gray3;
-	padding:5px 10px;
-} 
-.node-type-combo-article .panel-col-first .views-row:hover {
-	background-color:@gray2;
-}
-.node-type-combo-article .panel-col-first .views-row a {
-	text-decoration:none;
-}
-.node-type-combo-article .panel-col-first .views-row a:hover {
-	color:@gray3;
-}
-.node-type-combo-article .footer {
-	margin-top: 0;
-}
+.node-type-combo-article{
+	.center-wrapper {
+		// display: table;
+		// position: relative;
+		// width: 100%;
+		// overflow: inherit;
+		padding-top: 30px;
+		.make-row();
+		position: relative;
+		.clearfix();
+	}
+	.panel-col-first {
+		.make-sm-column(7);
+		.make-sm-column-offset(1);
+		// width: 620px;
+		// margin-left: 105px;
+		// margin-right: 85px;
+		// margin-bottom: 40px;
+	}
+	.center-wrapper .panel-col-last {
+		// width: 330px;
+		.make-sm-column(3);
+		.make-sm-column-offset(1);
+		height: 100%;
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-color: @gray2;
+	}
+	.panel-col-top {
+		background-color: @magenta;
+	}
+	.panel-col-top:before {
+		background-color: @magenta;
+	}
+	.pane-combo-page-articles {
+		border-top: 5px solid @gray3;
+	}
+	.panel-col-top .field-item a {
+		color: #000;
+	}
+	.panel-col-top .pane-node-title {
+		font-size: 47px;
+		font-weight: bold;
+	}
+	.panel-col-first h3 {
+		font-size: 47px;
+		color: @gray3;
+		border-bottom: 5px solid @gray3;
+		padding-top: 15px;
+		padding-bottom: 34px;
+	}
+	.panel-col-first .article-parent-class {
+		padding-top: 22px;
+		padding-bottom: 43px;
+		padding-right: 27px;
+	}
+	.panel-col-first .article-parent-class span {
+		display: block;
+	}
+	.panel-col-first .article-parent-class .article-title-class {
+		font-size: 47px;
+	}
+	.panel-col-first .article-parent-class .article-specification-class {
+		color: @magenta;
+		font-weight: bold;
+	}
+	.panel-col-first .article-parent-class .article-date-class {
+		font-weight: bold;
+		line-height: 16px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		font-size: 12px;
+	}
+	.panel-col-first .article-parent-class .article-date-class img {
+		padding-right: 8px;
+		margin-top: -4px;
+	}
+	.panel-col-first .views-row {
+		padding-top: 0;
+		padding-bottom: 10px;
+		border-bottom: 1px solid @gray2;
+		padding:5px 10px;
+	} 
+	.panel-col-first .views-row:hover {
+		background-color:@gray2;
+	}
+	.panel-col-first .views-row a {
+		text-decoration:none;
+	}
+	.panel-col-first .views-row a:hover {
+		color:@gray3;
+	}
+	.footer {
+		margin-top: 0;
+	}
 
-.node-type-combo-article .center-wrapper {
-	display: table;
-	position: relative;
-	width: 100%;
-	overflow: inherit;
-}
-.node-type-combo-article .center-wrapper .panel-col-last {
-	width: 330px;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	right: 0;
-	background-color: @gray2;
+	
 }
