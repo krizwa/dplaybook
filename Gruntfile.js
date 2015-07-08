@@ -32,10 +32,15 @@ module.exports = function(grunt) {
         // Watches files for changes and runs tasks based on the changed files
         watch: {
             options: {
-               interval: 250,
+               // interval: 250,
+               spawn: false,
                livereload: true
             },
             less: {
+                options: {
+                    spawn: true,
+                    livereload: false
+                },
                 files: ['<%= config.app %>/{,*/}*.less'
                 ],
                 tasks: ['less:server','autoprefixer']
@@ -59,7 +64,7 @@ module.exports = function(grunt) {
         autoprefixer: {
           dist: {
             options: {
-              browsers: ['last 2 versions', 'ie 8', 'ie 9'],
+              browsers: ['last 2 versions', 'ie 9'],
             },
             files: [{
               expand: true,
@@ -69,25 +74,6 @@ module.exports = function(grunt) {
             }]
           }
         },
-
-        ftpush: {
-            options: {
-
-            },
-            playbook: {
-                auth: {
-                    host: 'playbook.sapient.com',
-                    port: 22,
-                    authKey: 'dev'
-                },
-                src: 'css',
-                dest: '/var/www/playbook/sites/all/themes/playbook/fonts',
-                exclusions: ['**/.DS_Store', '**/Thumbs.db', '*.txt', '*.sh'],
-                simple: true,
-                useList: false
-            }
-        },
-
         // Compiles LESS to CSS and generates necessary files if requested
         less: {
             options: {
@@ -114,7 +100,7 @@ module.exports = function(grunt) {
 
         grunt.task.run([
             'less:server',
-            'autoprefixer',
+            // 'autoprefixer',
             'watch'
         ]);
     });

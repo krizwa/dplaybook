@@ -1,0 +1,109 @@
+/*  Dropdown navigation */
+
+/*.tb-megamenu li:hover .mega-dropdown-menu {
+	display: block;
+}*/
+
+.block-tb-megamenu {
+/* 	border-bottom: 1px solid @gray1; */
+}
+.tb-megamenu .collapse {
+	display: block;
+}
+.tb-megamenu .dropdown-menu a {
+	color: #fff;
+}
+.tb-megamenu {
+	/*width: 564px;*/
+	width: 612px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: @gray3;
+}
+.tb-megamenu .dropdown-menu {
+	border-bottom-color: transparent;
+	background-color: @gray3;
+}
+.tb-megamenu .nav > li > a {
+	font-weight: bold;
+	font-size: 21px;
+	color: #fff;
+	padding-bottom: 11px;
+	padding-top: 8px;
+}
+.tb-megamenu .nav li.dropdown.open > .dropdown-toggle {
+  color: #FFF;
+  background-color: transparent;
+}
+
+.tb-megamenu .dropdown-menu li > a:hover, 
+.tb-megamenu .dropdown-menu li > a:focus, 
+.tb-megamenu .dropdown-submenu:hover > a {
+  color: #FFF;
+  background-color: transparent;
+}
+.tb-megamenu .nav li.dropdown.active > .dropdown-toggle,
+.tb-megamenu .nav li.dropdown.open.active > .dropdown-toggle {
+  background-color: transparent;  
+  border-right:none;
+  color: #fff;
+}
+.tb-megamenu .nav > li.dropdown.open.active > a:hover, 
+.tb-megamenu .nav > li.dropdown.open.active > a:focus,
+.tb-megamenu .nav > li.dropdown.animating.active > a:hover, 
+.tb-megamenu .nav > li.dropdown.animating.active > a:focus,
+.tb-megamenu .nav > li.dropdown.open > a:hover, 
+.tb-megamenu .nav > li.dropdown.open > a:focus,
+.tb-megamenu .nav > li.dropdown.animating > a:hover, 
+.tb-megamenu .nav > li.dropdown.animating > a:focus {
+  background-color: transparent;
+  border-right: none;
+  color: #FFF;
+  border-top: 5px solid #fff;
+}
+.tb-megamenu .nav > li {
+	border-left: 1px solid @gray1;
+	border-top: none;
+}
+.tb-megamenu .nav > li:hover .dropdown-menu{
+	/* display:block; */
+}
+
+.tb-megamenu .nav > li:last-child {
+	border-right: 1px solid @gray1;
+}
+.tb-megamenu .nav > li > a {
+	border-right: none;
+	text-decoration: none;
+	border-top: 5px solid transparent;
+}
+.tb-megamenu .nav > li > a:hover {
+	background-color: @gray3;
+}
+.tb-megamenu .nav li.dropdown > .dropdown-toggle {
+	border-top: 5px solid transparent;
+}
+.tb-megamenu .nav li.dropdown.active > .dropdown-toggle {
+	border-right: none;
+	background-color: @gray3;
+	border-top: 5px solid #fff;
+}
+.tb-megamenu .nav > li > a:focus, 
+.tb-megamenu .nav > li > a:hover {
+	color: #fff;
+	background-color: @gray3;
+}
+
+.tb-megamenu .nav > .active > a, 
+.tb-megamenu .nav > .active > a:hover {
+	background-color: @gray3;
+	border-top: 5px solid #fff;
+}
+.mega-inner .views-field {
+	margin-top:10px;
+}
+.mega-inner .views-field a:before {
+	content:"\00BB";
+	display:inline-block;
+	margin-right:10px;
+}
