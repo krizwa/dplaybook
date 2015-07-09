@@ -37,12 +37,12 @@ p {
 
 a,
 a:link {
-	color: @gray3;
+	color: @grey;
 	text-decoration: underline;
 }
 
 a:hover {
-	color: @magenta;
+	color: @red;
 	text-decoration: none;
 }
 
@@ -58,14 +58,14 @@ p img {
 .btn-primary:focus, 
 .btn-primary:active, 
 .btn-primary.active {
-	background-color: @magenta;
-	border-color: @magenta;
+	background-color: @red;
+	border-color: @red;
 	color: #000;
 }
 
 .btn-primary {
-	background-color: @magenta;
-	border-color: @magenta;
+	background-color: @red;
+	border-color: @red;
 	border-radius: 0;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -79,14 +79,14 @@ p img {
 	width: 0;
 	height: 0;
 	border-top: 50px solid transparent;
-	border-right: 100px solid @magenta;
+	border-right: 100px solid @red;
 	border-bottom: 50px solid transparent;
 }
 
 .form-control,
 .form-email {
 	border-radius: 0;
-	background-color: @gray2;
+	background-color: @offWhite;
 	box-shadow: none;
 	border: none;
 	padding-top: 30px;
@@ -133,7 +133,7 @@ p img {
 }
 
 .article-section-counter {
-	color: @brown1;
+	color: @gold;
 	font-size: 25px;
 	text-align: center;
 	font-weight: bold;
@@ -172,8 +172,8 @@ p img {
 .pagination>.active>span:hover, 
 .pagination>.active>a:focus, 
 .pagination>.active>span:focus {
-	background-color: @magenta;
-	border-color: @magenta;
+	background-color: @red;
+	border-color: @red;
 }
 
 .pagination>li:last-child>a, 
@@ -243,7 +243,7 @@ p img {
 	background-color: #fff;
 }
 .navbar-default .navbar-nav > li > a {
-	color: @magenta;
+	color: @red;
 	text-decoration: none;
 }
 .navbar-nav > li > a {
@@ -265,7 +265,7 @@ p img {
 
 
 .main-container #page-header {
-	background-color: @gray3;
+	background-color: @grey;
 	position: relative;
 	&:before{
 	  content: "";
@@ -286,7 +286,7 @@ p img {
 section#block-search-form {
 	text-align: center;
 	padding-bottom: 20px;
-	background-color: @gray3;
+	background-color: @grey;
 }
 
 section#block-search-form .block-title {
@@ -312,17 +312,17 @@ form#search-block-form .btn {
 	border-radius: 0;
 	border: 1px solid transparent;
 	min-height: 65px;
-	background-color: @gray2;
+	background-color: @offWhite;
 }
 
 form#search-block-form .btn-default:hover {
-	background-color: @gray2;
+	background-color: @offWhite;
 	border: 1px solid transparent;
 }
 
 form#search-block-form .glyphicon-search {
 	transform: scale(-1, 1);
-	color: @magenta;
+	color: @red;
 	font-size: 20px;
 }
 
@@ -334,7 +334,7 @@ form #edit-search-block-form--2:-ms-input-placeholder {
 
 
 .panel-col-top {
-	background-color: @brown1;
+	background-color: @gold;
 	color: #fff;
 	padding-left: 126px;
 	padding-right: 126px;
@@ -382,7 +382,7 @@ form #edit-search-block-form--2:-ms-input-placeholder {
 */
 .panel-col-first .views-row .views-field-title-1 a {
 	font-size: 40px;
-	color: @gray3;
+	color: @grey;
 	text-decoration: none;
 	font-weight: 500;
 	line-height: 45px;
@@ -410,7 +410,7 @@ form #edit-search-block-form--2:-ms-input-placeholder {
 
 
 .sidebar-useful-links {
-	border-top: 5px solid @gray3;
+	border-top: 5px solid @grey;
 	width: 100%;
 	padding-bottom: 50px;
 	margin: 30px auto 0 auto;
@@ -418,7 +418,7 @@ form #edit-search-block-form--2:-ms-input-placeholder {
 .sidebar-useful-links a {
 	font-weight: bold;
 }
-
+// --------------------
 @import 'node-persona';
 @import 'node-combo-article';
 @import 'node-article';
@@ -431,15 +431,18 @@ form #edit-search-block-form--2:-ms-input-placeholder {
 @import 'welcome';
 @import 'login';
 
+.two-col-custom-top {
+	text-align: center;
+}
 
 .breadcrumb {
 	margin-bottom: 0;
-	background-color: @gray2;
+	background-color: @offWhite;
 	position: relative;
 	&:before {
 		content: "";
 		display: block;
-		background-color:  @gray2 ;
+		background-color:  @offWhite ;
 		top:0;
 		left: -100%;
 		right: -100%;
