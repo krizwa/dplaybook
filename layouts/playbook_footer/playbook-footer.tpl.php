@@ -12,7 +12,19 @@
  *   - $content['column']: Content in the middle row.
  */
 ?>
-<div class="col-sm-3">
-	<?php print $content['column']; ?>
+<div class="row playbook-footer">
+	<div class="col-sm-3">
+		<?php print $content['column1']; ?>
+	</div>	
+	<div class="col-sm-3">
+		<?php print $content['column2']; ?>
+	</div>	
+	<div class="col-sm-3">
+		<?php print $content['column3']; ?>
+	</div>	
+	<div class="col-sm-3">
+		<?php print $content['column4']; ?>
+	</div>	
 </div>
+
 

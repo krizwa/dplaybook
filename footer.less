@@ -20,74 +20,29 @@
 		  position: absolute;
 		  z-index: -1;
 		}
-
-		.block-title {
-				text-align: center;
-				font-size: 20px;
-				border-bottom: 1px solid @gray1;
-				padding-top: 25px;
-				padding-bottom: 25px;
-		}
-		.panel-display {
-				padding-bottom: 20px;
-				.make-row();
-		}
-
-		.pane-title {
-				color: #fff;
-				font-size: 20px;
-				margin-bottom: 34px;
-		}
-		.panel-col {
-			margin-left: 30px;
-		}
-		.pane-views,
-		.pane-block,
-		.pane-panels-mini {
-			.make-xs-column(6);
-			.make-sm-column(3);
+		h2 {
+			font-size: @font-size-h4;
+			text-align: left;
+			color: @white;
+			margin-bottom: 20px;
+			font-weight: normal;
 		}
 		a {
 			color: #fff;
 			text-decoration: none;
-			font-size: 12px;
-			font-weight: bold;
-			display: inline-block;
-			margin-bottom: 12px;
-		}
-		a:hover {
-			text-decoration: underline;
-		}
-		.pane-panels-mini .pane-menu-menu-help-support {
-			width: 230px;
-		}
-		.pane-panels-mini .nav a {
-			color: #fff;
-			text-decoration: none;
 			background: none;
 			font-size: 12px;
-			font-weight: bold;
 			display: inline-block;
-			margin-bottom: 12px;
+			margin-bottom: 7px;
 			&:hover {
 				text-decoration: underline;
 			}
 		}
-		.views-label-title-1 {
-			display: none;
-		}
-		.pane-content {
-			max-width: 230px;
-		}
-		.panel-pane a {
-			padding: 0;
-		}
+
 		#block-block-2 {
 			color: #fff;
 			background-color: #000;
 			font-size: 12px;
-			padding-left: 30px;
-			padding-right: 30px;
 			padding-top: 21px;
 			position:relative;
 				&:before{
@@ -120,16 +75,17 @@
 	.footer-bottom-links li {
 		display: inline-block;
 		list-style: none;
+		a {
+				font-weight: bold;
+				color: #fff;
+				text-decoration: none;
+				padding-right: 13px;
+				padding-left: 13px;
+			}
+		&:last-child a {
+			border-right: none;
+			padding-right: 0;
+		}
 	}
-	.footer-bottom-links li a {
-		font-weight: bold;
-		color: #fff;
-		text-decoration: none;
-		padding-right: 13px;
-		padding-left: 13px;
-	}
-	.footer-bottom-links li:last-child a {
-		border-right: none;
-		padding-right: 0;
-	}
+
 }

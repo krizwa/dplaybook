@@ -22,17 +22,18 @@
  *   - $content['bottom']: Content in the bottom row.
  */
 ?>
-<div class="row two-col-custom-top-wrapper">
-  <div class="col-sm-10 col-sm-offset-1 two-col-custom-top">
-    <div class="inside"><?php print $content['top']; ?></div>
-  </div>
+<div class="two-col-custom">
+	<div class="row two-col-custom-top-wrapper">
+	  <div class="col-sm-10 col-sm-offset-1 two-col-custom-top">
+	    <div class="inside"><?php print $content['top']; ?></div>
+	  </div>
+	</div>
+	<div class="row two-col-custom-content-wrapper">
+	  <div class="col-sm-3 col-sm-offset-1 two-col-custom-left">
+	    <div class="inside"><?php print $content['left']; ?></div>
+	  </div>
+	  <div class="col-sm-7 two-col-custom-right">
+	    <div class="inside"><?php print $content['right']; ?></div>
+	  </div>
+	</div>
 </div>
-<div class="row two-col-custom-content-wrapper">
-  <div class="col-sm-3 col-sm-offset-1 two-col-custom-left">
-    <div class="inside"><?php print $content['left']; ?></div>
-  </div>
-  <div class="col-sm-7 two-col-custom-right">
-    <div class="inside"><?php print $content['right']; ?></div>
-  </div>
-</div>
-
