@@ -73,29 +73,30 @@
  * @ingroup themeable
  */
 ?>
-<header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
-  <div class="container">
-   
-    <?php if (!empty($primary_nav)): ?>
-      <div class="navbar-collapse collapse">
-        <nav role="navigation">
-          <?php if (!empty($primary_nav)): ?>
-            <?php print render($primary_nav); ?>
-          <?php endif; ?>
-        </nav>
-      </div>
-    <?php endif; ?>
-  </div>
-   <div class="navbar-logo">
-      <?php if (!empty($site_name)): ?>
-      <a class="name navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
+<header class="top-header container <?php print $navbar_classes; ?>">
+   <div class="row">
+     <div class="col-sm-5">
+      <?php if (!empty($primary_nav)): ?> 
+        <div class="top-nav">
+         <?php if (!empty($primary_nav)): ?>
+           <?php print render($primary_nav); ?>
+         <?php endif; ?>
+       </div>
       <?php endif; ?>
-       <?php if ($logo): ?>
-      <a class="logo navbar-btn" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-        <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-      </a>
-      <?php endif; ?>
-    </div>
+     </div>
+     <div class="col-sm-2">
+        <?php if ($logo): ?>
+       <a class="logo navbar-btn" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
+         <img class="img-responsive" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+       </a>
+       <?php endif; ?>
+     </div>
+     <div class="col-sm-5">
+       <?php if (!empty($page['navigation'])): ?>
+         <?php print render($page['navigation']); ?>
+       <?php endif; ?>
+     </div>
+   </div>
 </header>
 <div class="main-container container">
   <header role="banner" id="page-header">

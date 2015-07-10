@@ -73,7 +73,7 @@
  * @ingroup themeable
  */
 ?>
-<header class="container <?php print $navbar_classes; ?>">
+<header class="top-header container <?php print $navbar_classes; ?>">
    <div class="row">
      <div class="col-sm-5">
       <?php if (!empty($primary_nav)): ?> 
