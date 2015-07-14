@@ -1,0 +1,45 @@
+.top-header {
+	margin-top: 0px;
+	margin-bottom: 37px;
+	.logo {
+		  margin: 0 auto;
+		  img {
+		  	  margin-top: 20px;
+		  }
+	}
+	.menu li {
+		display: inline-block;
+		border-top:3px solid transparent;
+		padding-top:15px;
+		margin-right: 20px;
+		&.first {
+			color: @black;
+			border-color:@black;
+		}
+		a {
+			text-decoration: none;
+			font-weight: bold;
+			color:@red;
+			&:hover {
+				text-decoration: none;
+				color:@black;
+			}
+		}
+	}
+	.top-search {
+		margin-top: 20px;
+		float: right;
+		width: 40%;
+		.input-group {
+
+			width: 100%;
+			input {
+				padding: 10px;
+				font-size: 10px;
+			}
+		}
+		.input-group-btn {
+			display: none;
+		}
+	}
+}

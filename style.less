@@ -12,6 +12,20 @@ a {
 	}
 }
 
+@import 'typography';
+@import 'header';
+@import 'login';
+@import 'homepage-references';
+@import 'help-and-support';
+@import 'glossary';
+@import 'megamenu';
+@import 'home';
+@import 'welcome';
+@import 'node-persona';
+@import 'node-combo-article';
+@import 'node-article';
+@import 'footer';
+
 .pagination > li:first-child > a {
 	border-radius: 0;
 }
@@ -44,17 +58,8 @@ a {
 
 
 // --------------------
-@import 'node-persona';
-@import 'node-combo-article';
-@import 'node-article';
 
-@import 'help-and-support';
-@import 'glossary';
-@import 'footer';
-@import 'megamenu';
-@import 'home';
-@import 'welcome';
-@import 'login';
+
 
 .main-container #page-header {
 	background-color: @grey;
@@ -140,51 +145,6 @@ a {
 	}
 }
 
-.top-header {
-	margin-top: 20px;
-	margin-bottom: 40px;
-	.logo {
-		  margin: 0 auto;
-		  img {
-		  	  margin-top: 20px;
-		  }
-	}
-	.menu li {
-		display: inline-block;
-		border-top:3px solid transparent;
-		padding-top:15px;
-		margin-right: 20px;
-		&.active {
-			color: @black;
-			border-color:@black;
-		}
-		a {
-			text-decoration: none;
-			font-weight: bold;
-			color:@red;
-			&:hover {
-				text-decoration: none;
-				color:@black;
-			}
-		}
-	}
-	.top-search {
-		margin-top: 20px;
-		float: right;
-		width: 40%;
-		.input-group {
-
-			width: 100%;
-			input {
-				padding: 10px;
-				font-size: 10px;
-			}
-		}
-		.input-group-btn {
-			display: none;
-		}
-	}
-}
 
 
 .breadcrumb {
