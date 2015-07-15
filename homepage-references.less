@@ -1,5 +1,51 @@
-.homepage-references{
+/* Home Page References Section [begin]*/
 
-
-	
+.homepage-references {
+    &:extend(.clearfix all);
+    margin: 0 auto 50px auto;
+    float: none;
+    .pane-title {
+        text-align: center;
+        color: #c10b4c;
+        padding: 22px 0 32px 0;
+    }
+    .item-list-element {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            list-style: none;
+            margin: 0;
+            a:hover {
+                text-decoration: none;
+                color: #333333;
+                .title {
+                    text-decoration: underline;
+                    color: #c10b4c;
+                }
+            }
+            .reference-article {
+                border-top: 3px solid #000;
+                padding: 40px 15px;
+                &:hover {
+                    background-color: #f4f2f0;
+                }
+            }
+            span {
+                display: block;
+            }
+            .document_type {
+                color: #c10b4c;
+                font-size: 20px;
+                padding-bottom: 7px;
+            }
+            .title {
+                font-size: 40px;
+                padding-bottom: 20px;
+            }
+            .body {
+                font-size: 18px;
+            }
+        }
+    }
 }
