@@ -4,6 +4,7 @@
     color: @white;
     position: relative;
     margin-bottom: 40px;
+    padding: 40px 0;
     &:before {
         content: "";
         display: block;
@@ -19,15 +20,17 @@
     .role-landing &:before {
         background-color: @gold;
     }
-    .inside {
-        padding: 30px 0;
+    a {
+        color: @white;
+        text-decoration: underline;
     }
     .pane-node-title,
     .pane-node-title a {
         font-size: 40px;
         color: @white;
+        text-decoration: none;
         &:hover {
-            text-decoration: none;
+            text-decoration: underline;
         }
     }
     .pane-node-body p {
