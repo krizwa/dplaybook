@@ -84,10 +84,16 @@
     }
     // combo article list  page 
     .view-combo-page-articles {
+        .view-content {
+            border-top: 3px solid @black;
+        }
         h3 {
             border-top: 3px solid @black;
             font-size: 36px;
             padding: 25px 0;
+            &:first-child {
+                border-top: 0;
+            }
         }
         .article-specification-class {
             font-size: 20px;
