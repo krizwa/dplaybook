@@ -1,0 +1,53 @@
+// Reset classes provided by bootstrap
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+{
+    margin: 0;
+}
+
+a {
+    color: @grey;
+    text-decoration: none;
+    &:hover {
+        color: @red;
+        text-decoration: underline;
+    }
+}
+
+label {
+    position: absolute;
+    top: -999999em;
+    left: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+tr td {
+    padding: 7px;
+}
+
+form .form-control {
+    border-radius: 0;
+}
+.form-group{
+  margin-bottom: 25px;
+}
+
+.btn-primary {
+    padding: 15px 45px;
+    display: inline-block;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    &:hover,
+    &:active {
+        color: #FFF;
+    }
+}
