@@ -1,37 +1,47 @@
 /* Help and support */
-.node-type-webform .region-content {
-	border-top: 5px solid #000;
-	border-bottom: 2px solid #000;
-	padding-left: 105px;
-	padding-right: 105px;
-	padding-bottom: 25px;
-	padding-top: 25px;
-	margin-top: 10px;
-	margin-left: 105px;
-	margin-right: 105px;
-}
-.node-type-webform .help-support-block h2 {
-	color: @grey;
-	font-size: 47px;
-}
-.node-type-webform .help-support-block #edit-submitted-first-name {
-	width: 350px;
-}
-.node-type-webform label {
-	display: none;
-}
-.node-type-webform form.webform-client-form .first-name,
-.node-type-webform form.webform-client-form .email {
-	float: left;
-	width: 350px;
-}
-.node-type-webform #block-system-main {
-	margin-top: 30px;
-}
-.node-type-webform form.webform-client-form .webform-component--email {
-	margin-left: 20px;
-	margin-bottom: 20px;
-}
-.node-type-webform .btn-primary {
-	margin-top: 30px;
+
+.node-type-webform {
+    .region-content {
+        border-top: 3px solid @black;
+        border-bottom: 3px solid @offWhite;
+        padding: 40px 105px 0 105px;
+        margin: 30px 105px 50px 105px;
+    }
+    .block {
+        margin-bottom: 30px;
+    }
+    .block-title {
+        color: @grey;
+        font-size: 40px;
+        padding-bottom: 10px;
+    }
+    p {
+        font-size: 18px;
+        color: @gray1;
+    }
+    .webform-component-textfield,
+    .webform-component-email {
+        width: 48%;
+        margin-right: 4%;
+        float: left;
+        padding-bottom: 20px;
+    }
+    .webform-component-email {
+        margin-right: 0;
+    }
+    .webform-component-textarea {
+        padding-bottom: 30px;
+    }
+    input {
+        width: 100%;
+        font-size: 18px;
+        padding: 15px 10px;
+    }
+    .btn-primary {
+        padding: 15px 70px;
+        display: inline-block;
+        text-transform: uppercase;
+        text-decoration: none;
+        width: auto;
+    }
 }

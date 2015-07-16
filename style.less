@@ -2,51 +2,20 @@
 @import 'typography';
 @import 'header';
 @import 'login';
-@import 'homepage-references';
+@import 'home';
 @import 'help-and-support';
 @import 'glossary';
 @import 'megamenu';
-@import 'home';
 @import 'welcome';
 @import 'breadcrumb';
 @import 'custom-top-wrapper';
 @import 'article-list';
+@import 'search-results';
 @import 'node-persona';
 @import 'node-combo-article';
 @import 'node-article';
 @import 'sidebar-links';
 @import 'footer';
-.pagination > li:first-child > a {
-    border-radius: 0;
-}
-
-.pagination>.active>a,
-.pagination>.active>span,
-.pagination>.active>a:hover,
-.pagination>.active>span:hover,
-.pagination>.active>a:focus,
-.pagination>.active>span:focus {
-    background-color: @red;
-    border-color: @red;
-}
-
-.pagination>li:last-child>a,
-.pagination>li:last-child>span {
-    border-radius: 0;
-}
-
-.search-results li {
-    list-style: none;
-}
-
-.search-results .title {
-    font-size: 47px;
-}
-
-.search-form {
-    display: none;
-}
-
 // --------------------
 .main-container #page-header {
     background-color: @grey;
@@ -63,60 +32,3 @@
         z-index: -1;
     }
 }
-
-
-/*
-
-.custom-top-wrapper {
-    .two-col-custom-right {
-        .views-row:first-child {
-            border-top: 5px solid #000;
-            padding-top: 30px;
-        }
-        .views-field-title-1 {
-            font-size: 32px;
-            a {
-                text-decoration: none;
-                color: @black;
-                &:hover {
-                    color: @black;
-                }
-            }
-        }
-        .views-row {
-            border-bottom: 1px solid @offWhite;
-            padding-bottom: 40px;
-            margin-bottom: 0px;
-            padding: 30px 10px;
-        }
-        .views-row:hover {
-            background-color: @offWhite;
-        }
-        .views-row:last-child {
-            border-bottom: none;
-        }
-        .views-field-title-1 a {
-            line-height: 45px;
-            display: block;
-            margin-bottom: 30px;
-        }
-        .field-content {
-            margin-bottom: 20px;
-        }
-    }
-}
-*/
-
-.landing {}
-
-.role-landing {}
-
-.combo-landing {}
-
-.artical-landing {}
-
-.search-landing {}
-
-.sidebar-toc {}
-
-.sidebar-links {}

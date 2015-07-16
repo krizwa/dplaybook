@@ -1,36 +1,83 @@
 .page-home {
-	.homepage-hero {
-		text-align: center;
-		background-color:  @red ;
-		color: @white;
-		position: relative;
-		padding: 35px 0;
-		&:before {
-			content: "";
-			display: block;
-			background-color:  @red ;
-			top:0;
-			left: -100%;
-			right: -100%;
-			height: 100%;
-			position: absolute;
-			z-index:-1;
-		}
-		h2 {
-			margin-bottom: 40px;
-		}
-		.views-field-title {
-			a {
-				color: @white;
-				font-size: @font-size-h3;
-				margin-top: 20px;
-				display: block;
-			}
-		}
-		.views-field-field-homepage-summary {
-			padding: 20px;
+    .homepage-hero {
+        text-align: center;
+        background-color: @red;
+        color: @white;
+        position: relative;
+        padding: 35px 0;
+        &:before {
+            content: "";
+            display: block;
+            background-color: @red;
+            top: 0;
+            left: -100%;
+            right: -100%;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+        }
+        h2 {
+            margin-bottom: 40px;
+        }
+        .views-field-title {
+            a {
+                color: @white;
+                font-size: @font-size-h3;
+                margin-top: 20px;
+                display: block;
+            }
+        }
+        .views-field-field-homepage-summary {
+            padding: 20px;
+        }
+    }
+}
 
-		}
-	}
-	
+// Home Page References Section [begin]*/
+.homepage-references {
+    &:extend(.clearfix all);
+    margin: 0 auto 50px auto;
+    float: none;
+    .pane-title {
+        text-align: center;
+        color: #c10b4c;
+        padding: 22px 0 32px 0;
+    }
+    .item-list-element {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            list-style: none;
+            margin: 0;
+            a:hover {
+                text-decoration: none;
+                color: #333333;
+                background-color: #f4f2f0;
+                display: block;
+                .title {
+                    color: #c10b4c;
+                }
+            }
+            .reference-article {
+                border-top: 3px solid #000;
+                padding: 40px 15px;
+            }
+            span {
+                display: block;
+            }
+            .document_type {
+                color: #c10b4c;
+                font-size: 20px;
+                padding-bottom: 7px;
+            }
+            .title {
+                font-size: 36px;
+                padding-bottom: 20px;
+            }
+            .body {
+                font-size: 18px;
+            }
+        }
+    }
 }
