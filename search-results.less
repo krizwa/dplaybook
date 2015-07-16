@@ -12,9 +12,13 @@
     }
     .search-result {
         border-top: 3px solid @offWhite;
-        padding: 30px 12px;
-        &:hover {
-            background-color: @offWhite;
+        a {
+            padding: 30px 12px;
+            display: block;
+            &:hover {
+                background-color: @offWhite;
+                text-decoration: none;
+            }
         }
     }
     .search-result:first-child {
@@ -30,8 +34,8 @@
         font-weight: normal;
         padding-bottom: 10px;
     }
-    a:hover {
-        text-decoration: none;
+    .search-snippet-info{
+        color: @darkGrey;
     }
 }
 
