@@ -1,63 +1,105 @@
 /* User Login */
 
-
 .page-user-login .main-container,
-.page-user-password .main-container{
-	margin-bottom:50px;
-	background-color:@offWhite ;
-	padding:50px 0;
-	position:relative;
+.page-user-password .main-container {
+    margin-bottom: 50px;
+    background-color: @offWhite;
+    padding: 50px 0;
+    position: relative;
 }
+
 .page-user-login .main-container h1,
-.page-user-password .main-container{
-	text-align:center;
-	margin-bottom: 10px;
+.page-user-password .main-container {
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .page-user-login .main-container:before,
-.page-user-password .main-container:before{
-	content: "";
-	display: block;
-	background-color: @offWhite;
-	top:0;
-	left: -100%;
-	right: -100%;
-	height: 100%;
-	position: absolute;
-	z-index:-1;
+.page-user-password .main-container:before {
+    content: "";
+    display: block;
+    background-color: @offWhite;
+    top: 0;
+    left: -100%;
+    right: -100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
 }
-.page-user-login .main-container .btn-primary,
-.page-user-password .main-container .btn-primary { 
-	padding: 15px 70px;
-	display:inline-block;
-	margin-top:20px;
-	text-transform:uppercase;
-	text-decoration:none;
-	width:auto;
 
+.page-user-login .main-container .btn-primary,
+.page-user-password .main-container .btn-primary {
+    padding: 15px 70px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: auto;
 }
 
 .page-user-login .main-container .btn-primary:hover,
 .page-user-login .main-container .btn-primary:active,
 .page-user-password .main-container .btn-primary:hover,
 .page-user-password .main-container .btn-primary:active {
-	color:#FFF;
-
+    color: #FFF;
 }
+
 input.form-control {
-	height:auto;
-	padding:15px 10px;
+    height: auto;
+    padding: 15px 10px;
+    font-size: 18px;
 }
 
 .page-user-login input,
 .page-user-password input {
-	background-color:#FFF;
-	border: 1px solid #bab8b7;
+    background-color: #FFF;
+    border: 1px solid #bab8b7;
 }
+
 .forgot-password-link {
-	display:inline-block;
-	margin-left:20px;
-	position:relative;
-	top:10px;
-	text-decoration: underline;	
+    display: inline-block;
+    margin-left: 20px;
+    position: relative;
+    top: 10px;
+    text-decoration: underline;
+}
+
+form .error input {
+    border: 2px solid @red;
+}
+
+.alert-danger {
+    color: @red;
+    font-size: 16px;
+    padding-bottom: 15px;
+    a {
+        color: @red;
+    }
+    .close {
+        display: none;
+    }
+    ul {
+        padding: 0;
+        margin: 0 0 0 25px;
+        li {
+            color: @red;
+            list-style: none;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+    }
+}
+
+.webform-confirmation {
+    margin: 50px 0 0 0;
+    background-color: #f4f2f0;
+    padding: 40px;
+    font-size: 20px;
+}
+
+.links {
+    background-color: #f4f2f0;
+    padding: 40px;
+    font-size: 16px;
+    margin: 0 0 50px 0;
 }
