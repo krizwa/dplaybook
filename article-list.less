@@ -3,6 +3,9 @@
 }
 
 .two-col-custom-right {
+    a {
+        text-decoration: underline;
+    }
     .pane-views {
         border-bottom: 3px solid @black;
         margin-bottom: 50px;
@@ -18,7 +21,7 @@
         .article-parent-class {
             padding: 30px 10px 25px 10px;
         }
-        a {
+        .field-content > a {
             display: block;
             text-decoration: none;
             color: #333333;
@@ -73,9 +76,10 @@
         }
         .section-number {
             float: left;
-            width: 10%;
+            width: 50px;
+            height: 50px;
             margin-right: 3%;
-            padding: 15px 24px;
+            padding: 7px 0 0 0;
             text-align: center;
             color: @white;
             background: @black;
@@ -86,13 +90,27 @@
         .section-title {
             float: left;
             width: 85%;
-            padding-top: 17px;
+            padding-top: 10px;
         }
         .views-field-field-section-summary .field-content {
-            margin-left: 13%;
+            margin-left: 11%;
             a {
                 display: inline;
                 text-decoration: underline;
+            }
+            img {
+                margin: 25px 0;
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        .views-field-field-upload-documents .field-content {
+            margin-left: 13%;
+            padding-top: 7px;
+            a {
+                display: inline;
+                text-decoration: underline;
+                color: @red;
             }
         }
     }
@@ -100,13 +118,51 @@
     .view-combo-page-articles {
         .view-content {
             border-top: 3px solid @black;
-        }
-        h3 {
-            border-top: 3px solid @black;
-            font-size: 36px;
-            padding: 25px 0;
-            &:first-child {
-                border-top: 0;
+            & > ol {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                counter-reset: my-badass-counter;
+                position: relative;
+                & > li {
+                    font-size: 36px;
+                    //margin-left: 50px;
+                    &:before {
+                        content: counter(my-badass-counter);
+                        counter-increment: my-badass-counter;
+                        position: absolute;
+                        left: 0px;
+                        width: 55px;
+                        height: 55px;
+                        padding: 2px 0 0 0;
+                        text-align: center;
+                        margin-top: 20px;
+                        color: @white;
+                        background: @black;
+                        -moz-border-radius: 100%;
+                        -webkit-border-radius: 100%;
+                        border-radius: 100%;
+                    }
+                    .category {
+                        border-top: 3px solid @black;
+                        font-size: 36px;
+                        padding: 20px 0 20px 75px;
+                    }
+                    &:first-child .category {
+                        border-top: 0;
+                    }
+                }
+            }
+            .field-content {
+                a a {
+                    display: inline;
+                    text-decoration: underline;
+                }
+                img {
+                    margin: 25px 0;
+                    max-width: 100%;
+                    height: auto;
+                }
             }
         }
         .article-specification-class {

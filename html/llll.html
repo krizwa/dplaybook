@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Numbered FAQ</title>
+    <style>
+    ol {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .faq {
+        counter-reset: my-badass-counter;
+        position: relative;
+    }
+    
+    .faq li:before {
+        content: counter(my-badass-counter);
+        counter-increment: my-badass-counter;
+        position: absolute;
+        left: 0;
+        font: bold 50px/1 Sans-Serif;
+        background: #ccc;
+        padding: 10px;
+    }
+    
+    .faq li {
+        margin: 0 0 50px 0;
+        padding-left: 50px;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="page-wrap">
+        <h1>Numbered FAQ</h1>
+        <ol class="faq">
+            <li>How much wood would a wood chuck chuck if a wood chuck could chuck wood?</li>
+            <li>What is the air-speed velocity of an unladen swallow?</li>
+            <li>Why did the chicken cross the road?</li>
+            <li>How much wood would a wood chuck chuck if a wood chuck could chuck wood?</li>
+            <li>What is the air-speed velocity of an unladen swallow?</li>
+            <li>Why did the chicken cross the road?</li>
+            <li>How much wood would a wood chuck chuck if a wood chuck could chuck wood?</li>
+            <li>What is the air-speed velocity of an unladen swallow?</li>
+            <li>Why did the chicken cross the road?</li>
+            <li>How much wood would a wood chuck chuck if a wood chuck could chuck wood?</li>
+            <li>What is the air-speed velocity of an unladen swallow?</li>
+            <li>Why did the chicken cross the road?</li>
+            <li>How much wood would a wood chuck chuck if a wood chuck could chuck wood?</li>
+            <li>What is the air-speed velocity of an unladen swallow?</li>
+            <li>Why did the chicken cross the road?</li>
+            <li>How much wood would a wood chuck chuck if a wood chuck could chuck wood?</li>
+            <li>What is the air-speed velocity of an unladen swallow?</li>
+            <li>Why did the chicken cross the road?</li>
+        </ol>
+    </div>
+</body>
+
+</html>
