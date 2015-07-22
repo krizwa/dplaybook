@@ -16,6 +16,7 @@
 @import 'node-article';
 @import 'sidebar-links';
 @import 'footer';
+@import 'reset-bootstrap-responsive';
 // --------------------
 .main-container #page-header {
     background-color: @grey;
@@ -30,5 +31,14 @@
         height: 100%;
         position: absolute;
         z-index: -1;
+    }
+}
+
+@media (max-width: 1200px) {
+    .main-container #page-header {
+        &:before {
+            left: 0;
+            right: 0;
+        }
     }
 }

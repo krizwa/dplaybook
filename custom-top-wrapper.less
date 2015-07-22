@@ -23,7 +23,7 @@
         color: @white;
         text-decoration: underline;
     }
-    .pane-node-title{
+    .pane-node-title {
         padding-bottom: 15px;
     }
     .pane-node-title,
@@ -41,5 +41,14 @@
     .pane-node-body p {
         font-size: 19px;
         font-weight: normal;
+    }
+}
+
+@media (max-width: 1200px) {
+    .custom-top-wrapper {
+        &:before {
+            left: 0;
+            right: 0;
+        }
     }
 }

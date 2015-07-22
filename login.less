@@ -57,7 +57,7 @@ form .error input {
     a {
         color: @black;
         text-decoration: underline;
-        &:hover{
+        &:hover {
             text-decoration: none;
         }
     }
@@ -94,4 +94,12 @@ form .error input {
     padding-bottom: 25px;
     margin: 0;
     border-bottom: 0;
+}
+
+@media (max-width: 1200px) {
+    .page-user-login .main-container:before,
+    .page-user-password .main-container:before {
+        left: 0;
+        right: 0;
+    }
 }
