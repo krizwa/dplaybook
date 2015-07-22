@@ -1,11 +1,15 @@
 //  Dropdown navigation */
 .tb-megamenu {
-    width: 612px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     background-color: @grey;
+    text-align: center;
     .collapse {
-        display: block;
+        display: inline-block;
+        vertical-align: middle;
+        zoom: 1;
+        *display: inline;
     }
     .dropdown-menu {
         border-bottom-color: transparent;
@@ -13,6 +17,9 @@
         a {
             color: #fff;
         }
+    }
+    .tb-megamenu-row {
+        text-align: left;
     }
     .nav {
         & > li {
@@ -52,6 +59,12 @@
                 background-color: @grey;
                 border-top: 5px solid #fff;
             }
+        }
+    }
+    .btn-navbar {
+        margin: 10px 20px;
+        i.icon-reorder {
+            background-position: -337px -49px;
         }
     }
 }
@@ -107,8 +120,36 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 979px) and (min-width: 768px) {
+    .tb-megamenu .nav-collapse.collapse {
+        height: auto !important;
+        overflow: visible !important;
+    }
+    .tb-megamenu .nav-collapse .nav {
+        display: inline-block;
+        overflow: hidden;
+        vertical-align: middle;
+    }
+    .tb-megamenu .nav-collapse .nav > li > a {
+        font-size: 18px;
+        font-weight: normal;
+    }
+    .tb-megamenu .nav-collapse .nav > li {
+        float: left;
+    }
+    .tb-megamenu .nav-collapse {
+        background: #333333;
+        margin-top: 0px;
+        position: relative;
+        top: 0px;
+        width: 100%;
+        z-index: 999;
+    }
     .tb-megamenu .btn-navbar {
-        //display: none;
+        display: none;
+    }
+    .tb-megamenu.animate .mega.open > .mega-dropdown-menu,
+    .tb-megamenu.animate .mega.animating.open > .mega-dropdown-menu {
+        opacity: 1;
     }
 }
