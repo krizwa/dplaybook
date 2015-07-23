@@ -41,7 +41,7 @@ module.exports = function(grunt) {
                     spawn: true,
                     livereload: false
                 },
-                files: ['<%= config.app %>/{,*/}*.less'
+                files: ['<%= config.app %>/less/{,*/}*.less'
                 ],
                 tasks: ['less:server','autoprefixer']
             },
@@ -86,7 +86,7 @@ module.exports = function(grunt) {
             },
             server: {
                 files: {
-                    '<%= config.app %>/css/style.css': '<%= config.app %>/style.less'
+                    '<%= config.app %>/css/style.css': '<%= config.app %>/less/style.less'
                 }
             }
         }
